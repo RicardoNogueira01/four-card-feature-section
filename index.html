@@ -6,16 +6,18 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+			rel="stylesheet"
+			crossorigin="anonymous"
+		/>
 		<title>Frontend Mentor | Four card feature section</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
 			body {
-				background-color: #d3d3d3;
 				font-family: 'Poppins', sans-serif;
 				line-height: 1.5;
 				font-weight: 200;
@@ -84,11 +86,20 @@
 
 			@media (min-width: 1440px) {
 				article {
-					padding: 1rem 0;
+					padding: 2rem 0;
 				}
 			}
 
 			/* COMPONENTS */
+
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+
 			.card-grid {
 				display: grid;
 				display: -ms-grid;
@@ -127,9 +138,8 @@
 			.card {
 				background: #fff;
 				border-radius: 10px;
-				border: 1px solid #d6d6d6;
 				border-top: 0;
-				box-shadow: 6px 10px 11px 0px #d6d6d6;
+				box-shadow: 1px 0px 13px 0px #d6d6d6;
 				overflow: hidden;
 				padding: 1rem 2rem;
 				position: relative;
@@ -169,22 +179,35 @@
 			.page-header h1 {
 				font-weight: 200;
 				color: hsl(234, 12%, 34%);
-				font-size: 36px;
+				font-size: 24px;
 			}
 
 			.page-header h2 {
 				font-weight: 600;
-				font-size: 36px;
+				font-size: 24px;
 				color: hsl(234, 12%, 34%);
+				padding-bottom: 2rem;
 			}
 
 			.page-header p {
 				color: hsl(229, 6%, 66%);
 				font-weight: 200;
+				font-size: 18px;
+			}
+
+			@media screen and (min-width: 1440px) {
+				.page-header h1 {
+					font-size: 36px;
+				}
+
+				.page-header h2 {
+					font-size: 36px;
+					padding-bottom: 2rem;
+				}
 			}
 		</style>
 	</head>
-	<body class="flow-content">
+	<body>
 		<article>
 			<div class="container container--small">
 				<div class="page-header text-align-center mt-4">
@@ -223,8 +246,10 @@
 
 		<footer>
 			<p class="attribution">
-				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-				<a href="#">Your Name Here</a>.
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/RicardoNogueira01" rel="noopener noreferrer">Ricardo Nogueira</a>.
 			</p>
 		</footer>
 	</body>
